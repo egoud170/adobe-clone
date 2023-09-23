@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe-Clone</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <nav>
+                <div class="top-nav">
+                    <div class="top-nav-part1">
+                        <span><i class="fa-solid fa-bars"></i> Menu</span>
+                        <i class="fa-solid fa-house"></i>
+                        <span class="creat"><i class="fa-solid fa-plus"></i> Creat</span>
+                    </div>
+                    <div class="top-nav-part2">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="sign-in">Sign in</span>
+                        <i class="fa-solid fa-minus"></i>
+                        <i class="fa-regular fa-window-maximize"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="bottom-nav">
+                    <div class="logo">
+                        <span class="red"></span>
+                        <span class="acrobat-sentence">welcome to acrobat reader</span>
+                    </div>
+                    <div class="bottom-nav-part2">
+                        <div class="search">
+                            <span class="search-icon-word" onclick="handleSearch()"><i class="fa-solid fa-magnifying-glass"></i> search</span>
+                        </div>
+                        <button class="try-acrobat">Try Acrobat Pro</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="sidebar">
+                <span class="sidebar-item s-recent">Recent</span>
+                <span class="sidebar-item s-starred">Starred</span>
+                <h4>Adobe Cloud Storage</h4>
+                <span class="sidebar-item s-files">Your files</span>
+                <span class="sidebar-item s-scans">Scans</span>
+                <span class="sidebar-item s-shared-you">Shared by you</span>
+                <span class="sidebar-item s-shared-others">Shared by others</span>
+                <h4>Agreements</h4>
+                <span class="sidebar-item s-agreements">All agreements</span>
+                <h4>Other file storage</h4>
+                <span class="sidebar-item s-computer">Your computer</span>
+            </div>
+            <div class="main-content">
+                <div class="sidebar-content recent">This content related to the recent bar</div>
+                <div class="sidebar-content starred">This content related to the starred bar</div>
+                <div class="sidebar-content your-files">This content related to the your files bar</div>
+                <div class="sidebar-content scans">This content related to the scans bar</div>
+                <div class="sidebar-content shared-by-you">This content related to the shared by you bar</div>
+                <div class="sidebar-content all-agreements">This content related to the all agreements bar</div>
+                <div class="sidebar-content your-computer">This content related to the your computer bar</div>
+                <div class="sidebar-content shared-by-others">This content related to the shared by others bar</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
