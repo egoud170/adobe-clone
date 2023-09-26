@@ -102,6 +102,7 @@ main .sidebar{
     width: 20%;
     height: 80%;
     padding: 20px;
+    
 }
 
 main .sidebar span{
@@ -157,6 +158,7 @@ main .main-content .sidebar-content{
 main{
     display: flex;
     width: 100%;
+    
 }
 
 .main-content{
@@ -164,7 +166,230 @@ main{
 }
 .sidebar-content{
     margin-top: 20px;
-    width: 90%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     border: 2px solid;
+    background-color: blueviolet;
+    
+}
+
+ .top-l{
+    width: 70%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 0 0 20px;
+    display: block;
+    border: 1px solid hsla(0, 0%, 50%,.5);
+    border-radius: 10px;
+}
+.top-l button{
+    height: 30px;
+    width: 100px;
+
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.box{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.box h5{
+    margin-bottom: 1rem;
+}
+.box span{
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: .69rem;
+    color: hsla(0, 0%, 0%,.7);
+}
+.box a{
+    text-decoration: none;
+    font-size: .7rem;
+    color: blue;
+}
+.box i{
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+.top-l .container{
+    width: 95%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr;
+    /* border: 2px solid; */
+    grid-template-areas: "first second file"
+                           ;
+    margin-top: 50px;
+}
+.first{
+    grid-area:first ;
+    /* background-color: brown; */
+}
+.second{
+    grid-area: second;
+    /* background-color: rgb(155, 29, 144); */
+    padding-left: 50px;
+}
+.file{
+    grid-area: file;
+    /* background-color: aquamarine; */
+}
+/* .footer{
+    height: 250px;
+    grid-area: footer;
+    background-color: aqua;
+} */
+.tem{
+    height: 93%;
+    width: 70%;
+    margin-left: 66px;
+    background-color: hsla(0, 0%, 50%,.1);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+}
+.tem span:nth-of-type(1){
+    font-size: .7rem;
+}
+.tem span:nth-of-type(2){
+    font-size: .7rem;
+    margin-top: 20px;
+}
+
+.tem a{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+}
+.tem .openfile{
+    height: 30px;
+    width: 70px;
+    border-radius: 50px;
+    padding: 8px;
+    text-align: center;
+    border: 2px solid black;
+}
+.tem i{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.top-r button{
+    height: 30px;
+    width: 100px;
+    border-radius: 50px;
+}
+.top-r{
+    width: 30%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 0 0 20px;
+    display: inline;
+    border: 1px solid hsla(0, 0%, 50%,.5);
+    border-radius: 10px;
+}
+.top-r .dots{
+    margin-left: 15rem;
+}
+.top-r h4{
+    margin-top: 3rem;
+    width: 80%;
+}
+.top-r h4,.top-r p{
+    margin-bottom: 1.5rem;
+}
+.top-r p{
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+.footer{
+    height: 29.5%;
+    width: 97%;
+    
+  /* background-color: rgb(204, 214, 54); */
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.footer-t{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-t span:nth-of-type(1){
+    height: 2rem;
+    width: 2rem;
+    margin-left: 890px;
+    padding: 6px;
+}
+.footer-t span:nth-of-type(1):hover{
+    margin-left: 890px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.footer-t span:nth-of-type(2){
+    margin-right: 20px;
+    height: 2rem;
+    width: 2rem;
+    padding: 6px;
+}
+.footer-t span:nth-of-type(2):hover{
+    cursor: pointer;
+    background-color: gray;
+}
+.footer span i{
+    font-size: 1.3rem;
+}
+.top-recent{
+    height: 60%;
+    display: flex;
+    gap: 20px;
+    /* background-color: beige; */
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.recent .line{ 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    /* background-color: aquamarine; */
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 65px;
+    border-bottom: 2px solid hsla(0, 0%, 50%,.5);
+}
+.recent .line .check{
+    margin-left: 30px;
+}
+.recent .line .name{
+    margin-left: -400px;
+}
+.recent .line .sharing{
+    margin-left: -100px;
+}
+.recent .line .opened,.size{
+    margin-left: -190px;
+}
+.recent{
+    background-color: hsl(0, 0%, 97%);
+    border: none;
+}
+.clear{
+    display: block;
+    margin-left: 59.95rem;
+    margin-top: 100px;
+    color: rgb(80, 80, 206);
+}
+.clear:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
